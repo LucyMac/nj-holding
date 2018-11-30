@@ -1,0 +1,77 @@
+html {
+  font-family: 'Palatino', serif;
+  color: #5E8892;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  /* position: relative; */
+}
+
+.title {
+  position: absolute;
+  margin: 0;
+  left: -76px;
+  top: -45px;
+  font-size: 84px;
+  letter-spacing: 22px;
+  font-weight: normal;
+}
+
+.content {
+  position: relative;
+  height: 640px;
+  width: calc(100vw - 240px);
+  margin: 120px 120px 0;
+}
+
+.content__background {
+  background-image: url('../img/Bear_min.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.content__copy {
+  position: absolute;
+  bottom: -140px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.subhead {
+  font-size: 38px;
+  letter-spacing: 10px;
+  margin: 0;
+  text-align: center;
+  font-weight: normal;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.contact p {
+  font-size: 14px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+  margin-left: 13px;
+}
