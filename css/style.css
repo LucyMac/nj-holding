@@ -5,17 +5,22 @@ html {
 
 body {
   margin: 0;
+  width: 100vw;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
 .wrapper {
-  /* position: relative; */
+  width: 100%;
 }
 
 .title {
   position: absolute;
   margin: 0;
   left: -76px;
-  top: -45px;
+  top: -46px;
   font-size: 84px;
   letter-spacing: 22px;
   font-weight: normal;
@@ -23,24 +28,19 @@ body {
 
 .content {
   position: relative;
-  height: 640px;
   width: calc(100vw - 240px);
   margin: 120px 120px 0;
 }
 
 .content__background {
-  background-image: url('../img/Bear_min.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 100%;
+  width: 100%;
+}
+
+.content__background-image {
   width: 100%;
 }
 
 .content__copy {
-  position: absolute;
-  bottom: -140px;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -74,4 +74,148 @@ body {
   width: 30px;
   height: 30px;
   margin-left: 13px;
+}
+
+/*  MEDIA QUERIES */
+    /* 0 - 450px  */
+    /* 451px - 559px  */
+    /* 560px - 767px  */
+    /* 768px -  979px */
+    /* 980px - 1200px */
+    /* 1201px ++ */
+
+
+/*________________________*/
+/* SMALL MOBILE */
+/*________________________*/
+
+@media screen and (max-width: 450px) {
+  .content {
+    width: calc(100vw - 40px);
+    margin: 20px 20px 0;
+  }
+  .title {
+    left: -10px;
+    top: -17px;
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+}
+/*________________________*/
+/* MEDIUM MOBILE */
+/*________________________*/
+@media screen and (max-width: 559px) {
+  .content {
+    width: calc(100vw - 50px);
+    margin: 25px 25px 0;
+  }
+  .title {
+    left: -18px;
+    top: -23px;
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+  .subhead {
+    font-size: 18px;
+    letter-spacing: 6px;
+    padding-bottom: 7px;
+  }
+  .contact {
+    margin: 7px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  h4 {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  .social {
+    flex-direction: column;
+  }
+  .social img {
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/*________________________*/
+/*  LARGE MOBILE */
+/*________________________*/
+@media screen and (min-width: 560px) and (max-width: 767px) {
+  .content {
+    width: calc(100vw - 140px);
+    margin: 70px 70px 0;
+  }
+  .title {
+    left: -44px;
+    top: -28px;
+    font-size: 50px;
+    letter-spacing: 11px;
+  }
+  .subhead {
+    font-size: 25px;
+    letter-spacing: 6px;
+    padding-bottom: 15px;
+  }
+  .contact {
+    margin: 7px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  h4 {
+    font-size: 15px;
+    margin: 8px 0;
+  }
+  .social img {
+    width: 23px;
+    height: 23px;
+    margin-left: 10px;
+  }
+}
+
+/*________________________*/
+/*  TABLET */
+/*________________________*/
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  .content {
+    width: calc(100vw - 160px);
+    margin: 80px 80px 0;
+  }
+  .title {
+    left: -52px;
+    top: -34px;
+    font-size: 60px;
+    letter-spacing: 13px;
+  }
+  .subhead {
+    font-size: 25px;
+    letter-spacing: 6px;
+  }
+  .contact {
+    margin: 7px 0;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  .social img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+  }
+}
+
+/*________________________*/
+/*  SMALL DESKTOP */
+/*________________________*/
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+
+}
+
+/*________________________*/
+/*  LARGE DESKTOP */
+/*________________________*/
+@media screen and (min-width: 1201px) {
+
 }
