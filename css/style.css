@@ -44,6 +44,7 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -78,6 +79,7 @@ a {
 }
 h4 {
   font-size: 18px;
+  font-weight: normal;
 }
 
 /*  MEDIA QUERIES */
@@ -95,23 +97,46 @@ h4 {
 
 @media screen and (max-width: 450px) {
   .content {
-    width: calc(100vw - 40px);
-    margin: 20px 20px 0;
+    width: calc(100vw - 60px);
+    margin: 40px 30px 0;
   }
   .title {
-    left: -10px;
+    left: -13px;
     top: -17px;
-    font-size: 30px;
+    font-size: 33px;
     letter-spacing: 10px;
+  }
+  .subhead {
+    font-size: 18px;
+    letter-spacing: 6px;
+    padding-bottom: 7px;
+  }
+  .contact {
+    margin: 7px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  h4 {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  .social {
+    flex-direction: column;
+  }
+  .social img {
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
 /*________________________*/
 /* MEDIUM MOBILE */
 /*________________________*/
-@media screen and (max-width: 559px) {
+@media screen and (min-width: 451px) and (max-width: 559px) {
   .content {
     width: calc(100vw - 50px);
-    margin: 25px 25px 0;
+    margin: 50px 25px 0;
   }
   .title {
     left: -18px;
@@ -189,7 +214,7 @@ h4 {
   }
   .title {
     left: -52px;
-    top: -34px;
+    top: -33px;
     font-size: 60px;
     letter-spacing: 13px;
   }
@@ -211,19 +236,45 @@ h4 {
 }
 
 /* ________________________
-/*  SMALL DESKTOP */
+/*  Ipad landscape */
 /*________________________*/
-@media screen and (min-width: 980px) and (max-width: 1200px) {
-
+@media screen and (width: 1024px) and (height: 768px) and (orientation: landscape) {
+  .content {
+    margin-top: 90px;
+  }
+  .title {
+    left: -66px;
+  }
 }
+
+/* ________________________
+/*  small DESKTOP */
+/*________________________*/
+@media screen and (min-width: 1200px) {
+  .content {
+    width: auto;
+    margin: 140px 230px 0;
+  }
+}
+
+/* ________________________
+/*  13" macbookpro DESKTOP */
+/*________________________*/
+@media screen and (min-width: 1400px) {
+  .content {
+    width: auto;
+    margin: 120px 270px 0;
+  }
+}
+
 
 /*________________________*/
 /*  LARGE DESKTOP */
 /*________________________*/
 @media screen and (min-width: 1501px) {
   .content {
-    width: calc(100vw - 400px);
-    margin: 200px 200px 0;
+    width: calc(100vw - 500px);
+    margin: 150px 250px 0;
   }
   .title {
     position: absolute;
